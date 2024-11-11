@@ -1,9 +1,7 @@
 package ge.mziuri.g1;
-
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 class Main {
 
 	public static void main(String[] args) {
@@ -15,7 +13,7 @@ class Main {
 			"1243-123456",
 			"1243-1234123456",
 			"1243-1234.56",
-			"1243-1234.1234.58"
+			"1243-1234.1234.5876"
 		);
 		stringList.forEach(s -> {
 			Matcher m = p.matcher(s);
@@ -23,4 +21,10 @@ class Main {
 		});
 	}
 
+}
+
+class A {
+	public static void main(String[] args) {
+		System.out.println("Hello, World!");
+	}
 }
